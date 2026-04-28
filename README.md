@@ -6,8 +6,7 @@ The dataset contains **2054** annotated image chips of size **1024 × 1024** pix
 
 This repository provides the dataset files, official split files, and original polygon annotations for reproducible research in fine-grained riparian vegetation segmentation.
 
-> 【需补充】如果你后面决定改成 “GitHub 放说明和代码，Zenodo 放完整数据集”，这里可改成：  
-> *This repository provides the benchmark code, official split files, metadata, and usage instructions. The full dataset is publicly available at Zenodo: [DOI].*
+> *This repository provides the benchmark code, official split files, metadata, and usage instructions. The full dataset is publicly available at Zenodo: [10.5281/zenodo.19849119].*
 
 ---
 
@@ -182,11 +181,8 @@ The evaluation metrics include:
 
 ## 9. Data Access
 
-### Current repository
-This repository currently stores the dataset files directly.
-
-> 【如果你后面改成 GitHub + Zenodo 方案，把本节替换成下面这段：】  
-> **The full dataset is hosted at Zenodo: [DOI link].**  
+### Current repository 
+> **The full dataset is hosted at Zenodo: [10.5281/zenodo.19849119].**  
 > **This GitHub repository provides benchmark code, split files, metadata, and usage instructions.**
 
 ---
@@ -224,12 +220,7 @@ If you use WetVeg-2mm in your research, please cite the associated paper.
 
 ## 11. License
 
-> 【需补充】建议明确写清楚数据许可证。  
-> 如果你准备采用 CC BY 4.0，可以写成：
-
 This dataset is released under the **CC BY 4.0** license.
-
-> 【如果代码后续单独公开，也建议单独注明代码许可证，例如 MIT。】
 
 ---
 
@@ -250,5 +241,4 @@ For questions regarding the dataset, please contact:
 - Official train/val/test split files are provided in `ImageSets/`.
 - The semantic masks and the original Labelme annotations are both publicly available.
 
-> 【可选补充】如果你想提醒使用者注意类别不平衡问题，可以加一句：  
 > *Users should note that the dataset exhibits clear class imbalance and patch-scale variation across categories.*
