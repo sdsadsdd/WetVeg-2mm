@@ -60,7 +60,7 @@ WetVeg-2mm/
   Stores all original image chips in JPEG format.
 
 - **SegmentationClass/**  
-  Stores all semantic segmentation masks in PNG format. Each mask is a single-channel label image, where pixel values correspond to class IDs.
+  Stores the publicly released semantic segmentation masks in PNG format.
 
 - **ImageSets/**  
   Stores the official split files:
@@ -70,7 +70,7 @@ WetVeg-2mm/
   Each file records the image names belonging to the corresponding subset.
 
 - **json/**  
-  Stores all original polygon annotations created in Labelme format.
+  Stores the publicly released Labelme polygon annotations.
 
 - **Class_list.xlsx**  
   Stores the class names and corresponding label IDs.
@@ -181,41 +181,27 @@ The evaluation metrics include:
 
 ## 9. Data Access
 
-### Current repository 
-> **The full dataset is hosted at Zenodo: [10.5281/zenodo.19849119].**  
-> **This GitHub repository provides benchmark code, split files, metadata, and usage instructions.**
+The publicly released version of WetVeg-2mm is available at Zenodo:
 
+**DOI:** 10.5281/zenodo.19849119
+
+The public release includes:
+- image chips
+- training and validation masks
+- training and validation JSON annotations
+- class mapping file
+- official split files
+
+To support controlled benchmark evaluation, the **test annotations are not publicly released**. This includes:
+- test masks in `SegmentationClass`
+- test JSON annotation files in `json`
+
+Researchers who would like to evaluate their methods on the test set may contact the authors for controlled testing.
 ---
 
 ## 10. Citation
 
 If you use WetVeg-2mm in your research, please cite the associated paper.
-
-~~~bibtex
-@article{WetVeg2mm,
-  title   = {WetVeg-2mm: An Ultra-High-Resolution UAV Orthomosaic Dataset for Fine-Grained Riparian Vegetation Semantic Segmentation},
-  author  = {[作者姓名，后续补充]},
-  journal = {[期刊名，后续补充]},
-  year    = {[年份，后续补充]},
-  volume  = {[卷号，后续补充]},
-  number  = {[期号，后续补充]},
-  pages   = {[页码，后续补充]},
-  doi     = {[论文 DOI，后续补充]}
-}
-~~~
-
-> 【如果后面你把数据集也放到 Zenodo 并拿到 DOI，建议再补一个 dataset citation：】
-
-~~~bibtex
-@dataset{WetVeg2mmDataset,
-  author    = {[作者姓名，后续补充]},
-  title     = {WetVeg-2mm dataset},
-  year      = {[年份，后续补充]},
-  publisher = {Zenodo},
-  doi       = {[Zenodo DOI，后续补充]}
-}
-~~~
-
 ---
 
 ## 11. License
@@ -228,17 +214,15 @@ This dataset is released under the **CC BY 4.0** license.
 
 For questions regarding the dataset, please contact:
 
-- **Name:** [你的姓名，后续补充]
+- **Name:** Guiqi Liu
 - **Affiliation:** [你的单位，后续补充]
-- **Email:** [你的邮箱，后续补充]
+- **Email:** 2401212902@stu.pku.edu.cn
 
 ---
 
 ## 13. Notes
 
-- All filenames in `JPEGImages/`, `SegmentationClass/`, and `json/` correspond one-to-one.
-- The dataset is intended for fine-grained riparian vegetation semantic segmentation research.
+- All filenames in `JPEGImages/`, `SegmentationClass/`, and `json/` correspond one-to-one by filename stem.
 - Official train/val/test split files are provided in `ImageSets/`.
-- The semantic masks and the original Labelme annotations are both publicly available.
-
-> *Users should note that the dataset exhibits clear class imbalance and patch-scale variation across categories.*
+- The publicly released version does **not** include test annotation masks or test JSON labels.
+- Users should note that the dataset exhibits clear class imbalance and patch-scale variation across categories.
