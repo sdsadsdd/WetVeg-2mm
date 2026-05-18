@@ -214,9 +214,9 @@ This dataset is released under the **CC BY 4.0** license.
 
 For questions regarding the dataset, please contact:
 
-- **Name:** Guiqi Liu
-- **Affiliation:** [你的单位，后续补充]
-- **Email:** 2401212902@stu.pku.edu.cn
+- **Name:** Huapeng Qin
+- **Affiliation:** Eco-environment and Resource Efficiency Research Laboratory, School of Environment and Energy, Peking University Shenzhen Graduate School, Shenzhen 518055, China
+- **Email:** qinhp@pkusz.edu.cn
 
 ---
 
